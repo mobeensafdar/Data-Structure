@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <h1>Linear Search</h1>
+    <script>
+        var myarray = [1, 2, 5, 6, 55, 11, 44, 88, 25, 365, 14, 78, 16, 27, 6, 71, 55];
+        var searchElement = parseInt(prompt("Search Here"));
+        //Using Function
+        function linearSearch(searchElement, myarray) {
+            for (var i = 0; i <= myarray.length; i++) {
+                if (searchElement === myarray[i]) {
+                    alert("Your Number found in array at index = " + i);
+                    break;
+                }
+            }
+        }
+        linearSearch(searchElement,myarray); //call function first parameter is for search element, second parameter is for passing array
+
+    </script>
+</body>
+
+</html>
